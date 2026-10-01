@@ -160,7 +160,7 @@ export const Scene2FlowerField: React.FC<Scene2FlowerFieldProps> = ({ onNext }) 
                 onClick={() => setActiveFlower(null)}
                 className="mt-5 px-6 py-2 rounded-full bg-warmGold/20 hover:bg-warmGold/30 border border-warmGold/40 text-warmGold text-xs font-medium transition-all"
               >
-                Close Poem
+                Close Note
               </button>
             </motion.div>
           </motion.div>

@@ -216,7 +216,7 @@ export const Scene6Finale: React.FC<Scene6FinaleProps> = ({ onRestart }) => {
         </div>
 
         <p className="font-serif text-lg sm:text-2xl text-cream leading-relaxed font-normal text-glow">
-          "Happy Birthday, Mashrikaa. ✨ May this new year of your life bring you endless reasons to smile, peace in your quietest moments, and all the warmth you so effortlessly bring into the world. Thank you for making this chapter so special."
+          "{STORY_CONFIG.finale.birthdayWish}"
         </p>
       </motion.div>
 

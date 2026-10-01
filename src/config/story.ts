@@ -27,151 +27,172 @@ export interface LanternWish {
 export const STORY_CONFIG = {
   theme: {
     title: "A Small Journey",
-    subtitle: "Every birthday deserves a little magic.",
+    subtitle: "Happy Birthday, Pubu ❤️ Distance changed everything except how much I love you.",
     musicTrack: "Baarish Mein Phir - Saahel",
     youtubeId: "BOT2xl1-p6Q",
   },
   scene0: {
     lines: [
-      "Every birthday deserves a little magic.",
-      "Especially for someone who brings so much quiet warmth into the world.",
-      "This is a small journey built just for you, to celebrate who you are."
+      "Your birthday feels a little different when you’re so far away.",
+      "“I never knew how much of my everyday life was actually made up of you until you weren't here anymore.” 🥹❤️",
+      "Happy birthday to the sister I wish I could celebrate beside."
     ],
-    prompt: "Click anywhere to wake the light...",
+    prompt: "Click anywhere to begin Pubu's journey...",
   },
   scene1: {
-    quote: "I'm glad our paths crossed.",
-    subtext: "In a world full of noise, finding you gave everything a calm, clear meaning.",
+    quote: "Distance changed everything except how much I love you.",
+    subtext: "You’re far away, but somehow still part of every little thing. I miss you more than I can explain, Pubu. ❤️",
   },
   photoScenes: [
     {
       id: "photo-1",
       photoNumber: 1,
-      title: "Rooftop Calm",
+      title: "Learning To Walk Alone",
       tag: "Memory I",
-      image: "/photos/her-photo-1.jpg",
-      compliment: "Looking up at the open sky in that yellow saree, carrying a quiet grace that is impossible to miss.",
-      feeling: "To be completely honest, finding you feels like one of the best things that could have happened to me. Every single day, I find myself quietly looking at my phone, waiting for your text. In a place where everything often felt repetitive, you came into my life right at the very end and gave my entire BRAC experience a real, genuine meaning that I will carry with me forever.",
+      image: "/photos/sister-photo-1.jpg",
+      compliment: "I never realized how many little things I depended on you for until you weren’t here.",
+      feeling: "Now I’m learning to call my own Uber, deal with presentations and assignments, figure things out on my own, and handle all those things I always thought I’d have you beside me for. I’m slowly learning to do things alone—not because I want to, but because you’re not here. And honestly, I miss having you to call for every little thing. I miss you more than I can explain, Pubu. ❤️",
       bgType: 1, // Night Sky stars
     },
     {
       id: "photo-2",
       photoNumber: 2,
-      title: "Festive Elegance",
+      title: "My Forever Watch Partner",
       tag: "Memory II",
-      image: "/photos/her-photo-2.jpg",
-      compliment: "That soft, candid smile of yours in the middle of all the vibrant lights and colors.",
-      feeling: "You have this effortless way of bringing warmth and comfort into any conversation without even trying. Even on the busiest or most ordinary days, seeing a message from you instantly brightens everything up. Getting to know you over this past month has been easily the best part of my daily routine.",
+      image: "/photos/sister-photo-3.jpg",
+      compliment: "I miss our little watch-time so much. 🥹",
+      feeling: "I miss sitting together and watching İçerde, Halka, The Gift, Siccin, Vincenzo, and Bigg Boss—laughing, getting scared, discussing every scene, and sometimes arguing over what to watch next. 😂 Now I watch things alone, and somehow they just don’t feel the same without you beside me. I never thought I’d miss something as simple as watching a show with you this much. Come back soon, Pubu. I need my watch partner back. ❤️",
       bgType: 2, // Sunrise flower field
     },
     {
       id: "photo-3",
       photoNumber: 3,
-      title: "Gentle Walkway",
+      title: "My Unpaid Life Consultant",
       tag: "Memory III",
-      image: "/photos/her-photo-3.jpg",
-      compliment: "Standing along the green garden path in purple, looking so composed and lovely.",
-      feeling: "I am genuinely so proud and grateful that our paths crossed when they did. You carry yourself with such quiet grace, kindness, and sincerity. It is rare to meet someone who feels so easy to talk to and so natural to be around—I truly value every small interaction we share.",
+      image: "/photos/sister-photo-11.jpg",
+      compliment: "I miss having my personal Google, my unpaid consultant, and my favourite person in the next room. 😂",
+      feeling: "I miss having someone to blame when I can't decide anything. I miss our “just one episode” that somehow became five episodes. I miss pausing the show every two minutes because we had something to discuss. 😂 I miss having my favourite person in the next room. And yes… I even miss your annoying side. Sometimes. VERY rarely. 😂❤️",
       bgType: 3, // Floating particles
     },
     {
       id: "photo-4",
       photoNumber: 4,
-      title: "Quiet Elegance",
+      title: "Watching You Build Your Life",
       tag: "Memory IV",
-      image: "/photos/her-photo-4.jpg",
-      compliment: "Sitting so poised and thoughtful, carrying an elegance that stays in your mind.",
-      feeling: "Looking back, meeting you right towards the end of this chapter made everything feel complete. You brought light, laughter, and a sense of calm into my world. I genuinely hope this birthday gives you as much warmth, happiness, and peace as you have brought into my life.",
+      image: "/photos/sister-photo-4.jpg",
+      compliment: "Watching you succeed makes me happier than you know. Still my sister, still my emergency contact. 😂",
+      feeling: "Honestly, one of the things I’m happiest about is seeing you earn for yourself. You’ve worked so hard, become independent, and made all of us so, so proud. Watching you build your own life makes me genuinely happy. And I can’t lie… I’m also enjoying the benefits of having a sister who earns now. 😂❤️ And no matter how far away you are, you’ll always be the sister I’ll proudly brag about—and happily spend her money. Keep shining, Pubu. We’re always cheering for you. ❤️",
       bgType: 4, // Lantern sky
     },
   ] as PhotoSceneConfig[],
   scene2: {
     title: "The Flower Field",
-    instruction: "Click on the blooming flowers to uncover the 4 poetic quotes",
+    instruction: "Click each blooming flower to uncover a sisterly note",
     flowers: [
       {
         id: "f1",
         icon: "🌸",
         flowerName: "Wild Rose",
-        poemTitle: "I. The Quiet Anchor",
-        text: `You are the quiet standard of my heart,
-The gentle rhythm when the world grows loud.
-We are two shadows tethered from the start,
-Drifting above the tempest and the crowd,
-Bound by a truth no distance tears apart.`,
+        poemTitle: "I. The Missing Pieces",
+        text: `I miss our random talks about absolutely nothing.
+I miss bothering you whenever I wanted. 😂
+
+Life feels a little incomplete without you here.
+Still my sister, still my emergency contact.
+
+I hope you can feel how loved you are,
+even from thousands of miles away. ❤️`,
       },
       {
         id: "f2",
         icon: "🌺",
         flowerName: "Morning Jasmine",
-        poemTitle: "II. The Sudden Spark",
-        text: `It began as a spark in a winter chill,
-A light that caught when I least looked away.
-Now every whisper of yours has the skill
-To turn the darkest night into bright day,
-And hold the turning universe dead still.`,
+        poemTitle: "II. Celebrating From Afar",
+        text: `I never thought celebrating your birthday without you would feel this strange.
+
+I wish I could hug you today instead of sending you a birthday video.
+
+One day, we’ll celebrate your birthday together again.
+Until then, I’ll celebrate you from here. ❤️`,
       },
       {
         id: "f3",
         icon: "🌷",
         flowerName: "Golden Tulip",
-        poemTitle: "III. Everyday Magic",
-        text: `Love isn't always found in grand design,
-Or spoken loud beneath a starlit sky.
-It lives in simple moments, yours and mine,
-A silent warmth when weary days pass by,
-Where ordinary hours grow divine.`,
+        poemTitle: "III. The Birthday Gift",
+        text: `Every year, I’ve always tried to give you something really special for your birthday.
+So I’m not going to lie, it feels weird knowing I’m not there to give you your gift this time. 🥹
+
+And honestly, I hate the thought of someone else giving you a better gift than I would. 😂
+I know it’s silly, but I’ve always wanted my gift to be your favourite. ❤️`,
       },
       {
         id: "f4",
         icon: "🌼",
         flowerName: "Sunlit Daisy",
-        poemTitle: "IV. The Sanctuary",
-        text: `I used to think the darkness was my home,
-Until your laughter rewrote every wall.
-You showed my restless spirit where to roam,
-And taught my heavy heart how soft to fall,
-Turning the wildest sea into its foam.`,
+        poemTitle: "IV. Proud Of You Always",
+        text: `Watching you succeed makes me happier than you know.
+You’ve worked so hard, become independent, and made all of us so proud.
+
+Suddenly, birthdays became a little more exciting for all of us.
+I love seeing you take care of all of us in your own little ways.
+
+Keep shining, Pubu. We’re always cheering for you. ❤️`,
       },
     ] as FlowerNote[],
   },
   scene4: {
     title: "Sky Lanterns",
-    instruction: "Click each of the 3 lanterns to release your wishes with the illustration cards",
+    instruction: "Click each of the 5 lanterns to release your wishes with the illustration cards",
     lanterns: [
       {
         id: "l1",
         title: "Wish I",
-        wish: "Mashrikaa, if peace had a face, I'd probably find it standing beside me like this.",
-        image: "/photos/illustration-1.jpg",
+        wish: "I wish we get many more birthdays to celebrate together, side by side, making the same silly memories we always do. 🥹❤️",
+        image: "/photos/wish-cake.jpg",
       },
       {
         id: "l2",
         title: "Wish II",
-        wish: "The flowers are beautiful... but somehow they're still losing the competition.",
-        image: "/photos/illustration-2.jpg",
+        wish: "I wish you success in everything you’re working for. May all your hard work take you exactly where you want to be. ✨",
+        image: "/photos/illustration-bench.jpg",
       },
       {
         id: "l3",
         title: "Wish III",
-        wish: "If this is what an ordinary day looks like with you, I can't wait for the extraordinary ones.",
-        image: "/photos/illustration-3.jpg",
+        wish: "And most importantly, I wish you always have people who love you, support you, and make you feel at home—no matter how far away you are. Happy birthday, Pubu. I love you and miss you so much. ❤️",
+        image: "/photos/illustration-seaside.jpg",
+      },
+      {
+        id: "l4",
+        title: "Wish IV",
+        wish: "I wish you endless courage, joy, and breakthroughs in your university journey and every new path you take. Keep shining bright and making everyone proud! 🎓✨",
+        image: "/photos/illustration-lancashire.jpg",
+      },
+      {
+        id: "l5",
+        title: "Wish V",
+        wish: "I wish that wherever life leads you, you always carry the warmth, prayers, and unconditional love of family in your heart. You are so deeply cherished. 🏡💖",
+        image: "/photos/illustration-family.jpg",
       },
     ] as LanternWish[],
   },
   scene5: {
-    title: "A Letter For You",
+    title: "A Letter For Pubu",
     letterLines: [
-      "We haven't known each other for very long.",
-      "But in this time, you've become the person whose texts I look forward to every single day.",
-      "You gave my BRAC life a true, genuine meaning right at the very end.",
-      "I am so proud to have found someone as warm and sincere as you.",
-      "Happy Birthday.",
-      "I hope this year brings you as much quiet happiness as you bring into my world."
+      "I never realized how many little things I depended on you for until you weren’t here.",
+      "Now I’m learning to call my own Uber, deal with presentations and assignments, and handle all those things I always thought I’d have you beside me for.",
+      "I’m slowly learning to do things alone—not because I want to, but because you’re not here.",
+      "And honestly, I miss having you to call for every little thing.",
+      "“I never knew how much of my everyday life was actually made up of you until you weren't here anymore.” 🥹",
+      "I wish I could hug you today instead of sending you a birthday video.",
+      "Your birthday gift is staying safe with me until I can give it to you properly.",
+      "Happy Birthday, Pubu. ❤️",
+      "No matter how far away you are, I love you and miss you more than words can explain."
     ],
   },
   finale: {
-    quote: "You gave my BRAC life a true meaning at the end — and I'm so proud to have found you.",
-    birthdayWish: "Happy Birthday ✨",
+    quote: "One day, we’ll celebrate your birthday together again. Until then, I’ll celebrate you from here. ❤️",
+    birthdayWish: "Happy Birthday, Pubu! 🎂✨ May this year bring you endless reasons to smile, peace in your quietest moments, and all the warmth you so effortlessly bring into the world. Distance changed everything except how much I love you. Always cheering for you, from home to wherever life takes you! ❤️",
   },
 };

@@ -19,7 +19,7 @@ export const FloatingPhotoBackground: React.FC<FloatingPhotoBackgroundProps> = (
       if (photoConfig?.image) return photoConfig.image;
     }
     // Default hero photo for intro, finale, rain, lanterns, flower field
-    return '/photos/her-photo-1.jpg';
+    return '/photos/sister-photo-1.jpg';
   };
 
   const currentPhoto = getPhotoImage(currentScene);

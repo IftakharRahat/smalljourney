@@ -41,8 +41,8 @@ export const Scene4Lanterns: React.FC<Scene4LanternsProps> = ({ onNext }) => {
         </p>
       </motion.div>
 
-      {/* 3 Interactive Lantern Buttons ONLY */}
-      <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 max-w-2xl my-auto w-full px-2 sm:px-4 py-4">
+      {/* 5 Interactive Lantern Buttons */}
+      <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6 max-w-4xl my-auto w-full px-2 sm:px-4 py-3 sm:py-4">
         {STORY_CONFIG.scene4.lanterns.map((lantern, idx) => {
           const isReleased = releasedLanterns.includes(lantern.id);
           return (
@@ -57,18 +57,18 @@ export const Scene4Lanterns: React.FC<Scene4LanternsProps> = ({ onNext }) => {
               }
               whileHover={{ scale: 1.08 }}
               onClick={() => handleReleaseLantern(lantern, idx)}
-              className={`relative flex flex-col items-center p-5 sm:p-7 rounded-2xl border transition-all duration-500 min-w-[140px] sm:min-w-[170px] cursor-pointer ${
+              className={`relative flex flex-col items-center p-4 sm:p-6 rounded-2xl border transition-all duration-500 min-w-[125px] sm:min-w-[155px] cursor-pointer ${
                 isReleased
                   ? 'glass-card-gold border-warmGold/60 shadow-[0_0_35px_rgba(251,191,36,0.4)]'
                   : 'glass-card border-white/20 hover:border-warmGold/40'
               }`}
             >
               <div className="relative mb-2">
-                <Flame className={`w-8 sm:w-10 h-8 sm:h-10 ${isReleased ? 'text-warmGold animate-bounce' : 'text-amber-400/80'}`} />
+                <Flame className={`w-7 sm:w-9 h-7 sm:h-9 ${isReleased ? 'text-warmGold animate-bounce' : 'text-amber-400/80'}`} />
                 <div className="absolute inset-0 rounded-full blur-md bg-warmGold/30" />
               </div>
 
-              <span className="font-serif text-sm sm:text-base text-cream/90 font-medium">
+              <span className="font-serif text-xs sm:text-base text-cream/90 font-medium">
                 {lantern.title || `Wish #${idx + 1}`}
               </span>
               <span className="text-[10px] sm:text-[11px] text-warmGold/90 mt-1 font-sans font-medium">
@@ -95,7 +95,7 @@ export const Scene4Lanterns: React.FC<Scene4LanternsProps> = ({ onNext }) => {
               exit={{ scale: 0.85, y: 20 }}
               transition={{ type: 'spring', damping: 25, stiffness: 300 }}
               onClick={(e) => e.stopPropagation()}
-              className="relative max-w-sm sm:max-w-md w-full glass-card-gold p-5 sm:p-7 rounded-3xl border border-warmGold/60 text-center shadow-[0_0_60px_rgba(251,191,36,0.35)] my-auto"
+              className="relative max-w-sm sm:max-w-md w-full glass-card-gold p-4 sm:p-6 rounded-3xl border border-warmGold/60 text-center shadow-[0_0_60px_rgba(251,191,36,0.35)] my-auto max-h-[90vh] overflow-y-auto"
             >
               <button
                 onClick={() => setCurrentWish(null)}
@@ -106,13 +106,13 @@ export const Scene4Lanterns: React.FC<Scene4LanternsProps> = ({ onNext }) => {
 
               {/* Illustration Image popping up */}
               {currentWish.image && (
-                <div className="relative w-full aspect-[4/5] max-w-[240px] sm:max-w-[270px] mx-auto mb-4 rounded-2xl overflow-hidden border border-warmGold/40 shadow-xl">
+                <div className="relative w-full aspect-[4/5] max-w-[230px] sm:max-w-[270px] mx-auto mb-3 sm:mb-4 rounded-2xl overflow-hidden border border-warmGold/40 shadow-xl bg-midnight/60">
                   <img
                     src={currentWish.image}
                     alt={currentWish.title || 'Wish illustration'}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-midnight/60 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-midnight/60 via-transparent to-transparent pointer-events-none" />
                 </div>
               )}
 
@@ -124,8 +124,8 @@ export const Scene4Lanterns: React.FC<Scene4LanternsProps> = ({ onNext }) => {
                     {currentWish.title || 'Special Wish'}
                   </span>
                 </div>
-                <p className="font-serif text-sm sm:text-base text-cream leading-relaxed text-glow min-h-[50px]">
-                  <TypewriterText text={currentWish.wish} speed={25} />
+                <p className="font-serif text-xs sm:text-sm md:text-base text-cream leading-relaxed text-glow min-h-[50px]">
+                  <TypewriterText text={currentWish.wish} speed={20} />
                 </p>
               </div>
 

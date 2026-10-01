@@ -24,13 +24,13 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   const sceneNames = [
     'Intro',
-    'Memory I (Rooftop Calm)',
-    'Memory II (Festive Elegance)',
-    'Memory III (Gentle Walkway)',
-    'Memory IV (Quiet Elegance)',
-    'The Flower Field',
-    'Sky Lanterns (3 Wishes)',
-    'Rain Letter',
+    'Memory I (Learning To Walk Alone)',
+    'Memory II (My Forever Watch Partner)',
+    'Memory III (My Unpaid Life Consultant)',
+    'Memory IV (Watching You Build Your Life)',
+    'The Flower Field (Sisterly Notes)',
+    'Sky Lanterns (5 Wishes)',
+    'A Letter For Pubu',
     '🎂 Birthday Cake & Wish',
   ];
 
